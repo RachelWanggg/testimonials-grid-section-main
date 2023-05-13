@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+}
+
+#container {
+    padding: 5% 2%;
+}
+
+p {
+    opacity: 70%;
+}
+
+.author p {
+    opacity: 50%;
+}
+
+.card h4 {
+    font-size:1.2rem;
+}
+
+#text {
+    margin-bottom:20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2);
+
+}
+
+
+
+.author {
+    display:flex;
+    align-items: center;
+    margin-bottom:10px; 
+    position:relative;
+    z-index:3;
+}
+
+#profile {
+    margin-right:30px;
+    border-radius: 50%;
+}
+
+#testimonial-1 {
+    position: relative;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    z-index:0;
+}
+
+
+#testimonial-2 {
+    background-color: hsl(217, 19%, 35%);
+    color: whitesmoke;
+}
+
+#testimonial-3 {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#testimonial-4 {
+    background-color: hsl(219, 29%, 14%);
+    color: whitesmoke;
+}
+
+#testimonial-5 {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#testimonial-1 #profile,
+#testimonial-4 #profile {
+    border: 1px solid purple;
+}
+
+
+#quote {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    z-index:1;
+}
+
+@media (min-width: 576px) {
+    #container {
+        display: flex;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    #container-left {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+
+    #container-left .card {
+        margin-right: 15px;
+    }
+
+    #testimonial-5 {
+        flex-basis: 20%;
+    }
+
+    #top {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    #bottom {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    #testimonial-1,
+    #testimonial-4 {
+        flex-basis: 70%;
+    }
+
+    #testimonial-2,
+    #testimonial-3 {
+        flex-basis: 30%;
+    }
+
+}
